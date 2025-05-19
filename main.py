@@ -52,7 +52,7 @@ class MainWindow(CTk): # Клас для головного вікна прог�
         self.image_to_send = CTkLabel(self, text="")
         self.image_to_send.bind("<Button-1>", self.remove_image)
         
-        # self.adaptation_ui()
+        self.adaptation_ui()
 
         try:
             self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
